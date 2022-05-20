@@ -38,7 +38,7 @@ buildRelease()
 	#time schedtool -B -n 1 -e ionice -n 1 make otapackage -j10 "$@"
 	if [ "$?" == 0 ]; then
 		echo "Build done"
-		mv $OUT/lineage*.zip LineageOSPlusPlus-$LOS_VER-V$ROM_VERSION.zip
+		mv $OUT/lineage*.zip LineageOS++-$LOS_VER-V$ROM_VERSION.zip
 	else
 		echo "Build failed"
 	fi
